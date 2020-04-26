@@ -1,5 +1,5 @@
 # 题目：分割数组的最大值
-# 难度；中等
+# 难度；难
 # 对应知识点：二分
 # 题号：LEETCODE 410
 # 题目链接： https://leetcode-cn.com/problems/split-array-largest-sum/
