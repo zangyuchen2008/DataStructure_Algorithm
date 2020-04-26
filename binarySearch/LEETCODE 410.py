@@ -45,4 +45,30 @@ def get_min_max(nums,m):
     return right
 print(get_min_max(nums,m))
 
+# 课堂标准解法
+nums = [7,2,5,10,8]#[1,8]
+m=2
+def check(nums,mid,m):
+    cur = 0
+    cnt = 1
+    for x in nums:
+        cur = cur + x
+        if cur > mid:
+            cnt = cnt +1
+            cur = x
+    return cnt<=m
+
+def bina_search(nums,m):
+    L = max(nums)-1
+    R= sum(nums)
+    while R-L >1:
+        mid = (L+R)//2
+        if check(nums,mid,m):
+            R= mid
+        else:
+            L= mid 
+    return R
+print(bina_search(nums,m))    
+
+
 
