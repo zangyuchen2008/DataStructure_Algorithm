@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np 
 arr = [1,5,3,90,100,33,76,11]
 def merge_sort(arr):
     length = len(arr)
